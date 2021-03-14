@@ -14,3 +14,5 @@ target_link_libraries(test-cpp-server
     PRIVATE OpenSSL::SSL
     PRIVATE OpenSSL::Crypto
 )
+
+install(TARGETS test-cpp-server DESTINATION bin)
