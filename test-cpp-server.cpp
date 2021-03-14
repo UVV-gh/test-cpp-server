@@ -108,7 +108,7 @@ void handleGetFormatRequest(http_request request)
 
 int main(int argc, char** argv)
 {
-    const std::string baseUri("http://127.0.0.1:8079/api/v1/parameter/");
+    const std::string baseUri("http://0.0.0.0:8079/api/v1/parameter/");
 
     http_listener listener(baseUri);
     listener.support(methods::GET, handleGet);
